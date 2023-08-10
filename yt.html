@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="buton.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe to My YouTube Channel</title>
+  <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .image-container {
+        text-align: center;
+        border: 2px solid #ccc;
+        box-shadow: 0 3px 6px rgba(66, 57, 57, 0.1);
+        padding: 10px;
+    }
+    .image-container img {
+        max-width: 100%;
+    }
+</style>
+</head>
+<body>
+  <h2 class="label">YouTube</h2>
+        
+    <div class="image-container">
+        <img src="Screenshot 2023-07-26 175339.png" alt="Image">  
+        <div id="channelInfo">
+            <button id="subscribeBtn" onclick="openYouTube()">Subscribe Now</button>
+        </div>
+    </div>
+
+    <h2 class="label">LinkedIn</h2>
+    <div class="image-container">
+        <img src="Screenshot 2023-07-26 200101.png" alt="Image">
+        <div id="channelInfo">
+            <button id="followsBtn" onclick="openLinkedIn()">Follow now</button>
+        </div>
+    </div>
+
+    <script>
+        function openYouTube() {
+            // Replace 'YOUR_YOUTUBE_URL' with the actual URL you want to open
+            window.open('https://www.youtube.com/channel/UCZOEd1b-1BYE19u8ZtRo_2w', '_blank');
+        }
+
+        function openLinkedIn() {
+            // Replace 'YOUR_LINKEDIN_URL' with the actual URL you want to open
+            window.open('YOUR_LINKEDIN_URL', '_blank');
+        }
+    </script>
+</body>
+</html>
